@@ -3,7 +3,6 @@ import Label from "../Label/Label";
 import Input from "../Input/Input";
 
 import styles from "./styles.module.css";
-import Select from "../Select/Select";
 import Checkbox from "../Checkbox/Checkbox";
 
 const FormLineAdvanced = ({ fields }) => {

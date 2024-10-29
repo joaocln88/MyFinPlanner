@@ -6,9 +6,9 @@ const FormBasic = ({ formFields }) => {
   return (
     <>
       {formFields.map((formField) => (
-        <div>
-          <FormLineBasic fields={formField} />
-        </div>
+        //  <div>
+        <FormLineBasic key={formField} fields={formField} />
+        //  </div>
       ))}
     </>
   );

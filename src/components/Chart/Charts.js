@@ -8,7 +8,6 @@ import {
   Area,
   CartesianGrid,
   Tooltip,
-  ReferenceLine,
   ReferenceDot,
 } from "recharts";
 

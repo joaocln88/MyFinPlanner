@@ -5,12 +5,12 @@ const parseData = (inputData) => {
     rate_of_return,
     duration,
     //rate_of_return_len,
-    duration_len,
-    inflation,
-    inflation_len,
-    contribution_increase,
-    contribution_increase_value,
-    contribution_inflation_increase,
+    // duration_len,
+    // inflation,
+    // inflation_len,
+    // contribution_increase,
+    // contribution_increase_value,
+    // contribution_inflation_increase,
   } = inputData;
 
   return {

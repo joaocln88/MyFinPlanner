@@ -5,7 +5,7 @@ const FormAdvanced = ({ formFields }) => {
   return (
     <div>
       {formFields.map((formField) => (
-        <FormLineAdvanced fields={formField} />
+        <FormLineAdvanced key={formField} fields={formField} />
       ))}
     </div>
   );

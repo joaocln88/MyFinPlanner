@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./styles.module.css";
-import { ErrorMessage } from "@hookform/error-message";
+//import { ErrorMessage } from "@hookform/error-message";
 import { useFormContext } from "react-hook-form";
 
 const Input = ({ name, id, unit }) => {
   const {
     register,
-    formState: { errors },
+    //  formState: { errors },
   } = useFormContext();
 
   return (

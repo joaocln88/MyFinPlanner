@@ -7,7 +7,6 @@ import { createData } from "../../models/createData";
 import parseData from "src/models/parseData";
 import styles from "./styles.module.css";
 import FormBasic from "../FormBasic/FormBasic";
-import FormAdvanced from "../FormAdvanced/FormAdvanced";
 import { formFields } from "./formFields";
 
 const schema = yup.object({
@@ -36,9 +35,13 @@ const Form = ({ setData }) => {
   const methods = useForm({
     resolver: yupResolver(schema),
   });
-  const { register, watch, handleSubmit } = methods;
+  const {
+    //register,
+    //watch,
+    handleSubmit,
+  } = methods;
 
-  const watchAdvanced = watch("advanced", false);
+  // const watchAdvanced = watch("advanced", false);
 
   const onSubmit = (inputData) => {
     const parsedInputData = parseData(inputData);

@@ -10,7 +10,7 @@ import { useFormContext } from "react-hook-form";
 
 const FormLineBasic = ({ fields }) => {
   const {
-    register,
+    //register,
     formState: { errors },
   } = useFormContext();
 

@@ -1,3 +1,4 @@
+import database from "infra_fp/database";
 import orchestrator from "tests/orchestrator";
 
 beforeAll(async () => {
@@ -5,7 +6,7 @@ beforeAll(async () => {
   database.query("drop schema public cascade; create schema public;");
 });
 
-test("GET to /api/vi/status should return status 200 ", async () => {
+test("GET to /api/vi/status should return status 200", async () => {
   const response = await fetch("http://localhost:3001/api/v1/status");
   expect(response.status).toBe(200);
 
