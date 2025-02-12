@@ -1,6 +1,6 @@
-import database from "infra_fp/database.js";
+import database from "infra/database.js";
 
-const status = async function status(request, response) {
+async function status(request, response) {
   const updatedAt = new Date().toISOString();
 
   let version = await database.query("SHOW server_version;");
@@ -26,6 +26,6 @@ const status = async function status(request, response) {
       },
     },
   });
-};
+}
 
 export default status;

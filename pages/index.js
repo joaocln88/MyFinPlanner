@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Form from "../src/components/Form/Form";
-import Charts from "../src/components/Chart/Charts";
+import MyForm from "src/components/Form/MyForm";
+import Charts from "src/components/Chart/Charts";
 
 const Home = function () {
   const [data, setData] = useState([]);
@@ -9,7 +9,7 @@ const Home = function () {
 
   return (
     <>
-      <Form setData={setData} />
+      <MyForm setData={setData} />
       <Charts data={data} />
       {/* <Table data={data} /> */}
     </>

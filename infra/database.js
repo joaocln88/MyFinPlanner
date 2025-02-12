@@ -10,7 +10,7 @@ async function query(queryObject) {
     console.error(error);
     throw error;
   } finally {
-    client.end();
+    await client.end();
   }
 }
 
@@ -20,6 +20,7 @@ function getSSLValues() {
       ca: process.env.POSTGRES_CA,
     };
   }
+
   return process.env.NODE_ENV === "production" ? true : false;
 }
 
